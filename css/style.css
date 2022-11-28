@@ -1,0 +1,21 @@
+:root {
+    --dark: #025259;
+    --blue: #007172;
+    --sunset: #F29325;
+    --orange: #D94F04;
+    --cream: #F4E2DE;
+    --tipo-principal: 'Secular One', sans-serif;
+}
+/* extras
+.color1 {color: #f6b7aa;}
+.color2 {color: #f4d292;}
+.color3 {color: #144c8a;}
+.color4 {color: #127778;}
+.color5 {color: #54b089;}*/
+
+/*font-family: 'Secular One', sans-serif;*/
+body{
+    background-color: var(--dark);
+    font-family: var(--tipo-principal);
+    font-size: 500%;
+}
