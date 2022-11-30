@@ -1,10 +1,10 @@
 :root {
     /* colores */
-    --bg-color: #542d5d;
-    --primary-shadow: #7e3668;
-    --primary-color: #bb4777;
-    --secondary-shadow: #ff6985;
-    --secondary-color: #ffa18e;
+    --bg-color: #A6877C;
+    --primary-shadow: #F29979 ;
+    --primary-color: #F2A679;
+    --secondary-shadow: #F25E3D;
+    --secondary-color: #A6442E;
 
     --font-family: "Roboto", sans-serf;
     --normal-font: 400;
@@ -15,13 +15,6 @@
     --line-height: 1.7rem;
     --transition: 0.3s;
 }
-/* extras
-.color1 {color: #f6b7aa;}
-.color2 {color: #f4d292;}
-.color3 {color: #144c8a;}
-.color4 {color: #127778;}
-.color5 {color: #54b089;}*/
-/*font-family: 'Secular One', sans-serif;*/
 
 html {
     scroll-behavior: smooth;
@@ -65,11 +58,11 @@ nav {
 }
 
 nav h1 {
-    color: var(--color-primario);
+    color: var(--primary-color);
 }
   
 nav a {
-    color: var(--color-primario);
+    color: var(--primary-color);
     transition: var(--transicion);
 }
 nav a:hover {
@@ -92,4 +85,19 @@ nav ul li {
     background-color: transparent;
     cursor: pointer;
     display: none;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+}
+
+section img {
+    margin: 10px;
+    width: 400px;
+    border-radius: 75%;
 }
