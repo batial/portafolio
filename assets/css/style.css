@@ -3,10 +3,10 @@
     --bg-color: #A6877C;
     --primary-shadow: #F29979 ;
     --primary-color: #F2A679;
-    --secondary-shadow: #F25E3D;
-    --secondary-color: #A6442E;
+    --secondary-shadow: #c3a78d;
+    --secondary-color: #ffe2c2;
 
-    --font-family: "Roboto", sans-serf;
+    --font-family: "Roboto", arial;
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
@@ -44,8 +44,10 @@ body {
     font-family: var(--font-family);
 }
 
+/* -----------nav ------------ */
 nav {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: 1;
@@ -87,17 +89,84 @@ nav ul li {
     display: none;
 }
 
+/* ----------- Hero -------------*/
+
 .hero {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
-    max-width: 68.75rem;
     margin: auto;
+    background-color: #F2A679;
+    width: 100%;
+    padding: 80px 0 10px 0;
 }
 
-section img {
+.hero img {
     margin: 10px;
-    width: 400px;
     border-radius: 75%;
+    border: 15px solid var(--secondary-color);
+    height: 30rem;
+    width: 30rem;
+}
+
+.bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+}
+
+.bio h2 {
+    margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem;
+}
+
+/* -------- sobre mi ------------- */
+
+.mas-sobre {
+    background-color: var(--primary-color);
+    padding: 1rem 6rem;
+}
+.mas-sobre h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+
+.mas-sobre p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
+
+/* ---------habilidades----------- */
+.habilidades {
+    margin: auto;
+    text-align: center;
+    padding: 2.5rem 8rem;
+    background-color: var(--bg-color);
+}
+.encabezado-habilidad {
+  margin-bottom: 1rem;
+}
+
+.contenedor-habilidades{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.icono {
+    width: 11.875rem;
+    height: 11.25rem;
+    justify-content: end;
+}
+
+.tarjeta-icono {
+    background-color: var(--primary-color);
+    border-radius: 75%;
+    border: 10px solid var(--secondary-color);
+    padding: 20px;
+    margin: 10px;
 }
