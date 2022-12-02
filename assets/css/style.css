@@ -154,7 +154,8 @@ nav ul li {
 
 .contenedor-habilidades{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
 }
 
 .icono {
@@ -169,4 +170,30 @@ nav ul li {
     border: 10px solid var(--secondary-color);
     padding: 20px;
     margin: 10px;
+}
+
+/* ----------Proyectos ------------ */
+.proyectos {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+}
+
+.img-ecommerce {
+    width: 50%;
+    border-radius: 15% 0 0 0;
+}
+
+.contenedor-de-proyectos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+}
+
+.tarjeta-de-proyectos{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F29979;
+    margin: 16px 8px;
+    border-radius: 15% 0 15% 0;
 }
