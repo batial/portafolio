@@ -1,10 +1,10 @@
 :root {
     /* colores */
-    --bg-color: #A6877C;
-    --primary-shadow: #F29979 ;
-    --primary-color: #F2A679;
-    --secondary-shadow: #c3a78d;
-    --secondary-color: #ffe2c2;
+    --bg-color: #5b5b5b;
+    --primary-shadow: #fffbdc ;
+    --primary-color: #ffbb8b;
+    --secondary-shadow: #fffffe;
+    --secondary-color: #add9ff;
 
     --font-family: "Roboto", arial;
     --normal-font: 400;
@@ -42,6 +42,7 @@ a:hover {
 
 body {
     font-family: var(--font-family);
+    background-color: bisque;
 }
 
 /* -----------nav ------------ */
@@ -50,7 +51,7 @@ nav {
     width: 100%;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 99;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -97,7 +98,7 @@ nav ul li {
     justify-content: center;
     gap: 2.5rem;
     margin: auto;
-    background-color: #F2A679;
+    background-color: var(--primary-color);
     width: 100%;
     padding: 80px 0 10px 0;
 }
@@ -105,7 +106,7 @@ nav ul li {
 .hero img {
     margin: 10px;
     border-radius: 75%;
-    border: 15px solid var(--secondary-color);
+    border: 15px solid var(--primary-shadow);
     height: 30rem;
     width: 30rem;
 }
@@ -128,28 +129,57 @@ nav ul li {
 /* -------- sobre mi ------------- */
 
 .mas-sobre {
-    background-color: var(--primary-color);
-    padding: 1rem 6rem;
+    padding: 1rem ;
+    gap: 10px;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    margin: 20px;
+    border-radius: 50px;
 }
 .mas-sobre h2 {
-    margin-bottom: var(--bottom-margin);
     text-align: center;
+    align-items: initial;
+    margin: 0 20px 20px 20px  ;
 }
 
-.mas-sobre p {
+.mas-sobre-descripcion {
+    display: flex;
     line-height: var(--line-height);
-    padding: 0.4rem;
+    gap: 30px;
 }
 
 /* ---------habilidades----------- */
+
+#habilidades{
+    background-color: var(--bg-color);
+    color: var(--secondary-color);
+}
+
 .habilidades {
+    display: flex;
     margin: auto;
     text-align: center;
-    padding: 2.5rem 8rem;
-    background-color: var(--bg-color);
+    justify-content: center;
+    padding: 8rem;
+    gap: 10px;
 }
-.encabezado-habilidad {
-  margin-bottom: 1rem;
+.tarjeta {
+    transition: 300ms ease-in-out;
+}
+.tarjeta + .tarjeta {
+    margin-left: -10%;
+}
+.tarjeta:hover{
+    transform: rotate(-4deg);
+}
+.tarjeta:hover ~ .tarjeta{
+    z-index: 1;
+    translate: 60px;
+}
+
+#habilidades h2 {
+    text-align: center;
+    padding-top: 100px;
 }
 
 .contenedor-habilidades{
@@ -165,35 +195,104 @@ nav ul li {
 }
 
 .tarjeta-icono {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     border-radius: 75%;
-    border: 10px solid var(--secondary-color);
+    border: 10px solid var(--secondary-shadow);
     padding: 20px;
     margin: 10px;
 }
 
+
 /* ----------Proyectos ------------ */
 .proyectos {
-    background-color: var(--bg-color);
-    padding: 32px 0;
+    background-color: var(--primary-shadow);
+    padding: 10rem 0;
+}
+.proyectos h2 {
+    margin: 10px;
+    text-align: center;
 }
 
 .img-ecommerce {
     width: 50%;
-    border-radius: 15% 0 0 0;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px 0 0 0;
 }
 
 .contenedor-de-proyectos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--primary-shadow);
 }
 
 .tarjeta-de-proyectos{
     display: flex;
-    justify-content: space-between;
-    background-color: #F29979;
+    height: 200px;
+    justify-content: space-around;
+    background-color: var(--primary-color);
     margin: 16px 8px;
-    border-radius: 15% 0 15% 0;
+    border-radius: 30px 0 30px 0;
 }
+.info-proyectos {
+    margin: 10px;
+}
+
+/* ---------contactame-------- */
+.contacto {
+    margin: 5rem 2rem;
+}
+  
+.contacto h2 {
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+}
+
+.control-formulario {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+}
+
+.control-formulario label {
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+  }
+  
+.control-formulario textarea {
+    font-size: 14px;
+    min-height: 6.25rem;
+    max-width: 40rem;
+}
+  
+  .control-formulario .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset var(--primary-color);
+    outline: none;
+  }
+  .input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--primary-color);
+  }
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #fff;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+  }
+  .submit-btn:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+  }

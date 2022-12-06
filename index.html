@@ -46,73 +46,84 @@
       <!---------- Sobre Mí ------------->
       <section class="mas-sobre">
         <h2>Más sobre mí</h2>
-        <p>
-          📚 Fui estudiante en el programa Jóvenes a Programar de Ceibal en 2022, 
-          con foco en el desarrollo web Front-end.
-          En el mismo, desarrollamos tanto habilidades técnicas, como también habilidades blandas. Además 
-          de esto, el curso me ayudó a mejorar mi inglés.
-        </p>
-        <p>
-          🚀 Actualmente me encuentro aprendiendo tecnologías de javascript 
-          de manera autodidacta en plataformas online.
-        </p>
-        <p>
-          🎯 Mi objetivo a mediano plazo es poder seguir aprendiendo sobre tecnologías y frameworks
-          de javascript y no descarto también la posibilidad de adquirir conocimientos de Back-end.
-        </p>
-      </section>
-      <!------------------ Sección Habilidades ---------------->
-      <section class="habilidades" id="habilidades">
-        <h2 class="header-habilidadr">Habilidades</h2>
-        <div class="contenedor-habilidades animate__animated animate__pulse">
-            <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icono tarjeta-icono">
-            <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icono tarjeta-icono">
-            <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icono tarjeta-icono">
-            <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icono tarjeta-icono">
-            <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icono tarjeta-icono">
+        <div class="mas-sobre-descripcion">
+          <p>
+            📚 Fui estudiante en el programa Jóvenes a Programar de Ceibal en 2022, 
+            con foco en el desarrollo web Front-end.
+            En el mismo, desarrollamos tanto habilidades técnicas, como también habilidades blandas. Además 
+            de esto, el curso me ayudó a mejorar mi inglés.
+          </p>
+          <p>
+            🚀 Actualmente me encuentro aprendiendo tecnologías de javascript 
+            de manera autodidacta en plataformas online.
+          </p>
+          <p>
+            🎯 Mi objetivo a mediano plazo es poder seguir aprendiendo sobre tecnologías y frameworks
+            de javascript y no descarto también la posibilidad de adquirir conocimientos de Back-end.
+          </p>
         </div>
       </section>
+      <!------------------ Sección Habilidades ---------------->
+      <section id="habilidades">
+        <h2> Habilidades</h2>
+        <div class="habilidades">
+          <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="tarjeta icono tarjeta-icono">
+          <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="tarjeta icono tarjeta-icono">
+          <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="tarjeta icono tarjeta-icono">
+          <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="tarjeta icono tarjeta-icono">
+          <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="tarjeta icono tarjeta-icono">
+        </div>
+      </section>
+
       <!---------- Sección Proyectos -------------->
       <section class="proyectos" id="proyectos">
         <h2 class="titulo-de-proyectos">Proyectos recientes:</h2>
         <div class="contenedor-de-proyectos">
           <div class="tarjeta-de-proyectos">
             <img src="assets/images/ecommerce.jpg" alt="rastreador-de-gastos" loading="lazy" class="img-ecommerce">
-            <div>
+            <div class="info-proyectos">
               <h3 class="titulo-de-proyectos">E-commerce</h3>
               <p class="detalle-de-proyectos">
                 E-commerce realizado como proyecto final del curso de Jóvenes a Programar.
                 Fue desarrollado haciendo uso de las funcionalidades del DOM, APIs JSON, Bootstrap y más.
               </p>
-              <a href="https://batial.github.io/" target="_blank" class="">Visitar proyecto</a>
             </div>
           </div>
-          <div class="contenedor-de-proyectos">
-            <div class="tarjeta-de-proyectos">
-              <img src="assets/images/pomodoro.png" alt="rastreador-de-gastos" loading="lazy" class="img-ecommerce">
-              <div>
-                <h3 class="titulo-de-proyectos">Pomodoro Timer</h3>
-                <p class="detalle-de-proyectos">
-                  Página desarrollada con javascript, dedicada para estudiar con el método pomodoro.
-                  Además de esto, podremos escuchar musica Lo-Fi para acompañar.
-                </p>
-                <a href="" target="_blank" class="">Aún en desarrollo.</a>
-              </div>
+          <div class="tarjeta-de-proyectos">
+            <img src="assets/images/pomodoro.png" alt="rastreador-de-gastos" loading="lazy" class="img-ecommerce">
+            <div class="info-proyectos">
+              <h3 class="titulo-de-proyectos">Pomodoro Timer</h3>
+              <p class="detalle-de-proyectos">
+                Página desarrollada con javascript, dedicada para estudiar con el método pomodoro.
+                Además de esto, podremos escuchar musica Lo-Fi para acompañar.
+              </p>
             </div>
-          
-          <!-- <div class="contenedor-de-proyectos tarjeta-de-proyectos">
-            <img
-              src="assets/images/expenseTracker.png" alt="rastreador-de-gastos" loading="lazy" class="project-pic">
-            <h3 class="titulo-de-proyectos">NOMBRE</h3>
-            <p class="detalle-de-proyectos">
-              INFO.
-            </p>
-            <a href="#" target="_blank" class="SITIO">Visitar proyecto</a>
-          </div> -->
+          </div>
         </div>
       </section>
         <!-- Sección Contacto-->
-
+      <section class="contacto" id="contacto">
+        <h2>Contactame</h2>
+        <div class="formulario-contacto-contenedor">
+          <div class="formulario-contacto">
+            <form action="https://formspree.io/f/xyylngw" method="POST">
+              <div class="control-formulario">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="sender-name" placeholder="Escribe tu nombre" class="input-field" required>
+              </div>
+              <div class="control-formulario">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="sender-email" placeholder="Ingresa tu correo electrónico" class="input-field" required>
+              </div>
+              <div class="control-formulario">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" cols="60" rows="10" placeholder="Escribe tu mensaje" name="mensaje" class="input-field" required></textarea>
+              </div>
+              <input type="submit" value="Enviar" id="submit-btn" class="submit-btn">
+            </form>
+          </div>
+        </div>
+      </section>
         <!-- Sección de redes sociales - Fijado a la derecha -->
 
         <!-- Vuelve al comienzo  -->
