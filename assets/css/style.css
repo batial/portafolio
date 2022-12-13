@@ -42,7 +42,8 @@ a:hover {
 
 body {
     font-family: var(--font-family);
-    background-color: bisque;
+    background: rgb(131,102,102);
+    background: linear-gradient(315deg, rgba(131,102,102,1) 22%, rgba(255,218,150,1) 74%);
 }
 
 /* -----------nav ------------ */
@@ -98,7 +99,6 @@ nav ul li {
     justify-content: center;
     gap: 2.5rem;
     margin: auto;
-    background-color: var(--primary-color);
     width: 100%;
     padding: 80px 0 10px 0;
 }
@@ -182,11 +182,11 @@ nav ul li {
     padding-top: 100px;
 }
 
-.contenedor-habilidades{
+/* .contenedor-habilidades{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
-}
+} */
 
 .icono {
     width: 11.875rem;
@@ -241,12 +241,12 @@ nav ul li {
 /* ---------contactame-------- */
 .contacto {
     padding: 5rem 2rem 2rem 2rem;
+    color: var(--bg-color);
 }
   
 .contacto h2 {
     text-align: center;
     margin-bottom: var(--bottom-margin-2);
-    color: var(--primary-color);
 }
 
 .formulario-contacto {
@@ -259,7 +259,6 @@ nav ul li {
 .control-formulario label {
     line-height: 2.7em;
     font-weight: var(--bold-font);
-    color: var(--primary-color);
 }
   
 .control-formulario textarea{
@@ -295,3 +294,100 @@ nav ul li {
     border: 2px solid var(--primary-color);
     cursor: pointer;
 }
+
+/* ---------- vista movil -------------- */
+@media screen and (max-width: 760px) {
+    nav {
+        padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 90px;
+        right: 5px;
+        width: 40%;
+        border-radius: 10px;
+        align-items: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+    
+    nav ul li {
+        margin: 8px;
+    }
+
+    .menu-hamburguesa {
+        display: block;
+    }
+    
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    /* ---seccion hero--- */
+    .hero {
+        flex-direction: column;
+        gap: 30px;
+      }
+    
+    .hero img {
+        height: 20rem;
+        width: 20rem;
+        margin: 20px 0 100px 0;
+    }
+    
+    .bio {
+        margin-top: -7rem;
+        width: 20.5rem;
+    }
+
+    /* ----- mas info---- */
+    .mas-sobre-descripcion {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    /* ------habilidades--------  */
+    .habilidades{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 1fr;
+    }
+
+    .tarjeta {
+        transition: 0.5s;
+    }
+    .tarjeta + .tarjeta {
+        margin-left: 0%;
+    }
+    .tarjeta:hover{
+        background-color: var(--primary-color);
+    }
+    .tarjeta:hover ~ .tarjeta{
+        z-index: 1;
+        translate: 0px;
+    }
+
+    .icono {
+        width: 10rem;
+        height: 10rem;
+        justify-content: center;
+    }
+    
+    .tarjeta-icono {
+        background-color: var(--secondary-color);
+        border-radius: 75%;
+        border: 10px solid var(--secondary-shadow);
+        padding: 20px;
+        margin: 10px;
+    }
+
+    /* ----------proyectos---------- */
+    .contenedor-de-proyectos{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* @media screen and (max-width: 420px) { 
+}  */
