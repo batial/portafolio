@@ -46,6 +46,12 @@ body {
     background: linear-gradient(315deg, rgba(131,102,102,1) 22%, rgba(255,218,150,1) 74%);
 }
 
+
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
 /* -----------nav ------------ */
 nav {
     position: fixed;
@@ -117,10 +123,6 @@ nav ul li {
     border-radius: 6px;
 }
 
-.bio h2 {
-    margin-bottom: var(--bottom-margin);
-}
-
 .bio p {
     line-height: var(--line-height);
     padding: 0.3rem;
@@ -182,11 +184,11 @@ nav ul li {
     padding-top: 100px;
 }
 
-/* .contenedor-habilidades{
+.contenedor-habilidades{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
-} */
+}
 
 .icono {
     width: 11.875rem;
@@ -352,7 +354,7 @@ nav ul li {
     .habilidades{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding: 1fr;
+        padding: 5rem;
     }
 
     .tarjeta {
@@ -379,7 +381,7 @@ nav ul li {
         background-color: var(--secondary-color);
         border-radius: 75%;
         border: 10px solid var(--secondary-shadow);
-        padding: 20px;
+        padding: 15px;
         margin: 10px;
     }
 
@@ -389,5 +391,34 @@ nav ul li {
     }
 }
 
-/* @media screen and (max-width: 420px) { 
-}  */
+@media screen and (max-width: 450px) { 
+
+    main{
+        max-width: 100%;
+    }
+
+    .hero{
+        padding: 10px 0 10px 0;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .hero img {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .habilidades{
+        padding: 2rem;
+    }
+    .tarjeta-icono{
+        margin: 0;
+        padding: 10px;
+    }
+
+    .contacto {
+        padding: 1rem;
+    }
+} 
