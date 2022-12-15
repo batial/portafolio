@@ -1,3 +1,8 @@
+@font-face {
+    font-family: roboto;
+    src: url(/assets/fonts/Roboto-Regular.ttf);
+}
+
 :root {
     /* colores */
     --bg-color: #5b5b5b;
@@ -6,11 +11,8 @@
     --secondary-shadow: #fffffe;
     --secondary-color: #add9ff;
 
-    --font-family: "Roboto", arial;
-    --normal-font: 400;
+    --font-family: roboto, monospace , Arial;
     --bold-font: 700;
-    --bolder-font: 900;
-    --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
     --line-height: 1.7rem;
     --transition: 0.3s;
@@ -42,8 +44,14 @@ a:hover {
 
 body {
     font-family: var(--font-family);
-    background: rgb(131,102,102);
-    background: linear-gradient(315deg, rgba(131,102,102,1) 22%, rgba(255,218,150,1) 74%);
+    background: rgba(255,162,112,1);
+    background: -moz-linear-gradient(45deg, rgba(255,162,112,1) 0%, rgba(255,162,112,1) 9%, rgba(255,162,112,1) 37%, rgba(255,214,133,1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,162,112,1)), color-stop(9%, rgba(255,162,112,1)), color-stop(37%, rgba(255,162,112,1)), color-stop(100%, rgba(255,214,133,1)));
+    background: -webkit-linear-gradient(45deg, rgba(255,162,112,1) 0%, rgba(255,162,112,1) 9%, rgba(255,162,112,1) 37%, rgba(255,214,133,1) 100%);
+    background: -o-linear-gradient(45deg, rgba(255,162,112,1) 0%, rgba(255,162,112,1) 9%, rgba(255,162,112,1) 37%, rgba(255,214,133,1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(255,162,112,1) 0%, rgba(255,162,112,1) 9%, rgba(255,162,112,1) 37%, rgba(255,214,133,1) 100%);
+    background: linear-gradient(45deg, rgba(255,162,112,1) 0%, rgba(255,162,112,1) 9%, rgba(255,162,112,1) 37%, rgba(255,214,133,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa270', endColorstr='#ffd685', GradientType=1 );
 }
 
 
@@ -318,6 +326,10 @@ nav ul li {
     
     nav ul li {
         margin: 8px;
+    }
+
+    .navegacion svg{
+        font-size: 50px;
     }
 
     .menu-hamburguesa {
