@@ -160,6 +160,10 @@ nav ul li {
 
 /* ---------habilidades----------- */
 
+svg{
+    margin-bottom: -5px;
+}
+
 #habilidades{
     background-color: var(--bg-color);
     color: var(--secondary-color);
@@ -170,7 +174,7 @@ nav ul li {
     margin: auto;
     text-align: center;
     justify-content: center;
-    padding: 8rem;
+    padding: 0 8rem 8rem 8rem;
     gap: 10px;
 }
 .tarjeta {
@@ -188,6 +192,7 @@ nav ul li {
 }
 
 #habilidades h2 {
+    padding: 5rem ;
     text-align: center;
     padding-top: 100px;
 }
@@ -214,12 +219,16 @@ nav ul li {
 
 
 /* ----------Proyectos ------------ */
-.proyectos {
+#trans-proy{
     background-color: var(--primary-shadow);
-    padding: 10rem 0;
+}
+
+.proyectos {
+    padding: 5rem 0;
+    background-color: var(--primary-shadow);
 }
 .proyectos h2 {
-    margin: 10px;
+    margin: 2rem 0;
     text-align: center;
 }
 
@@ -243,14 +252,19 @@ nav ul li {
     background-color: var(--primary-color);
     margin: 16px 8px;
     border-radius: 30px 0 30px 0;
+    overflow: hidden;
 }
 .info-proyectos {
     margin: 10px;
 }
 
 /* ---------contactame-------- */
+#trans-contact{
+    margin-top: -5px;
+}
+
 .contacto {
-    padding: 5rem 2rem 2rem 2rem;
+    padding: 5rem 2rem 0rem 2rem;
     color: var(--bg-color);
 }
   
@@ -407,14 +421,6 @@ nav ul li {
 
     main{
         max-width: 100%;
-    }
-
-    .hero{
-        padding: 10px 0 10px 0;
-    }
-
-    nav{
-        position: static;
     }
 
     .hero img {
