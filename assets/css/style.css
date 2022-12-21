@@ -130,6 +130,9 @@ nav ul li {
     padding: 0.625rem;
     border-radius: 6px;
 }
+.bio h2{
+    font-size: 50px;
+}
 
 .bio p {
     line-height: var(--line-height);
@@ -192,7 +195,8 @@ svg{
 }
 
 #habilidades h2 {
-    padding: 5rem ;
+    font-size: 50px;
+    padding: 5rem 0 2rem 0 ;
     text-align: center;
     padding-top: 100px;
 }
@@ -228,6 +232,7 @@ svg{
     background-color: var(--primary-shadow);
 }
 .proyectos h2 {
+    font-size: 50px;
     margin: 2rem 0;
     text-align: center;
 }
@@ -261,63 +266,109 @@ svg{
 /* ---------contactame-------- */
 #trans-contact{
     margin-top: -5px;
+    background-color: var(--primary-color);
 }
+  
 
 .contacto {
-    padding: 5rem 2rem 0rem 2rem;
-    color: var(--bg-color);
-}
-  
-.contacto h2 {
-    text-align: center;
-    margin-bottom: var(--bottom-margin-2);
-}
-
-.formulario-contacto {
+    background-color: var(--primary-color);
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
 }
 
-.control-formulario label {
-    line-height: 2.7em;
-    font-weight: var(--bold-font);
-}
-  
-.control-formulario textarea{
-    resize: none;
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif ;
+.form {
+    width: 60%;
+    padding: 20px 40px;
 }
 
-.control-formulario .input-field {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 2px outset var(--primary-color);
-    outline: none;
-}
-.input-field::placeholder {
-    color: var(--primary-color);
-}
-.submit-btn {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: #fff;
-    border: 2px solid var(--primary-color);
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: var(--bold-font);
-    transition: var(--transition);
+.titulo {
+    font-size: 50px;
+    margin-bottom: 20px;
     color: var(--bg-color);
 }
-.submit-btn:hover {
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);
-    cursor: pointer;
+.contInput {
+    position: relative;
+    height: 3rem;
+    margin-bottom: 17px;
 }
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--bg-color);
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+    color: var(--bg-color);
+}
+.contInput textarea{
+    resize: none;
+    padding-top: 10px;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif ;
+    height: 150px;
+}
+  
+/* oculta los placeholders */
+  
+::placeholder {
+    color: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+}
+.submitBtn {
+    display: block;
+    width: 100%;
+    padding: 15px 30px;
+    border: none;
+    background-color: var(--bg-color);
+    color: var(--primary-shadow);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 120px;
+  }
+  
+.submitBtn:hover {
+    background-color: var(--primary-shadow);
+    color: var(--bg-color);
+    transform: translateY(-2px);
+}
+.input:focus + .label {
+    top: -7px;
+    left: 14px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--primary-shadow);
+}
+.input:focus {
+    border: 2px solid var(--primary-shadow);
+}
+.input:not(:placeholder-shown)+ .label {
+    top: -7px;
+    left: 14px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
 
 /* ---------- vista movil -------------- */
 @media screen and (max-width: 760px) {
@@ -415,6 +466,12 @@ svg{
     .contenedor-de-proyectos{
         grid-template-columns: 1fr;
     }
+
+    /* -------contacto------- */
+    .form{
+        width: 80%;
+    }
+
 }
 
 @media screen and (max-width: 450px) { 
@@ -437,6 +494,9 @@ svg{
     }
 
     .contacto {
-        padding: 1rem;
+        padding: 10rem 0;
+    }
+    .form{
+        width: 100%;
     }
 } 

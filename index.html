@@ -117,33 +117,30 @@
       <svg id="trans-contact" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#fffbdc" fill-opacity="1" d="M0,160L34.3,165.3C68.6,171,137,181,206,197.3C274.3,213,343,235,411,234.7C480,235,549,213,617,170.7C685.7,128,754,64,823,53.3C891.4,43,960,85,1029,122.7C1097.1,160,1166,192,1234,186.7C1302.9,181,1371,139,1406,117.3L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
       </svg>
-        <!-- Sección Contacto-->
+
+      <!---------- Sección Contacto--------------->
       <section class="contacto" id="contacto">
-        <h2>Contáctame</h2>
-        <div class="formulario-contacto-contenedor">
-          <div class="formulario-contacto">
-            <form action="https://formspree.io/f/xzbwnger" method="POST">
-              <div class="control-formulario">
-                <label for="name">Nombre</label>
-                <input type="text" id="name" name="sender-name" placeholder="Escribe tu nombre" class="input-field" required>
-              </div>
-              <div class="control-formulario">
-                <label for="email">Correo Electrónico</label>
-                <input type="email" id="email" name="sender-email" placeholder="Ingresa tu correo electrónico" class="input-field" required>
-              </div>
-              <div class="control-formulario">
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" cols="60" rows="10" placeholder="Escribe tu mensaje" name="mensaje" class="input-field" required></textarea>
-              </div>
-              <input type="submit" value="Enviar" id="submit-btn" class="submit-btn">
-            </form>
+        <form action="https://formspree.io/f/xzbwnger" method="POST" class="form">
+          <h2 class="titulo">Contactame</h2>
+
+          <div class="contInput">
+            <input type="text" id="nombre" name="nombre-del-remitente" class="input" placeholder="a" required>
+            <label for="nombre" class="label">Nombre</label>
           </div>
-        </div>
+    
+          <div class="contInput">
+            <input type="text" id="email" name="email-del-remitente" class="input" placeholder="a" required>
+            <label for="email" class="label">E-Mail</label>
+          </div>
+
+          <div class="contInput">
+            <textarea id="mensaje" type="text" cols="60" rows="10" placeholder="Escribe tu mensaje" name="mensaje" class="input" required></textarea>
+            <label for="mensaje" class="label">Mensaje</label>
+          </div>
+    
+          <input type="submit" class="submitBtn" value="Enviar">
+        </form>
       </section>
-        <!-- Sección de redes sociales - Fijado a la derecha -->
-
-        <!-- Vuelve al comienzo  -->
-
         <!-- Sección Footer  -->
 
 
