@@ -269,6 +269,12 @@ svg{
     font-size: 25px;
 }
 
+.enDesarrollo:hover {
+    backdrop-filter: blur(10px);
+    background-color: var(--bg-color);
+    cursor: auto;
+}
+
 /* ---------contactame-------- */
 #trans-contact{
     margin-top: -5px;
