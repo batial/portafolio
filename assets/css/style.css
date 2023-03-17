@@ -449,9 +449,9 @@ svg{
 
     /* ----- mas info---- */
     .mas-sobre-descripcion {
-        flex-direction: column;
-        padding: 1rem;
+        grid-template-columns: 1fr;
     }
+
     /* ------habilidades--------  */
     .habilidades{
         display: grid;
