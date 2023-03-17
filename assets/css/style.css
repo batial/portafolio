@@ -122,6 +122,7 @@ nav ul li {
     width: 25rem;
     padding: 0.625rem;
     border-radius: 6px;
+    color: var(--bg-color);
 }
 .bio h2{
     font-size: 50px;
