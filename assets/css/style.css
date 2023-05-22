@@ -118,6 +118,7 @@ nav ul li {
     width: 30rem;
 }
 
+
 .bio {
     width: 25rem;
     padding: 0.625rem;
@@ -131,6 +132,16 @@ nav ul li {
 .bio p {
     line-height: var(--line-height);
     padding: 0.3rem;
+}
+
+#linkCV {
+    display: block;
+    color: var(--primary-shadow);
+}
+
+#linkCV:hover {
+    color: var(--secondary-shadow);
+    transition: 1s;
 }
 
 /* -------- sobre mi ------------- */
