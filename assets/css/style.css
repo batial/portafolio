@@ -120,10 +120,13 @@ nav ul li {
 
 
 .bio {
+
     width: 25rem;
     padding: 0.625rem;
     border-radius: 6px;
     color: var(--bg-color);
+    justify-content: center;
+    align-items: center;
 }
 .bio h2{
     font-size: 50px;
@@ -135,9 +138,18 @@ nav ul li {
 }
 
 #linkCV {
-    display: block;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    
+    width: 11rem;
+    height: 3rem;
     color: var(--primary-shadow);
+    background-color: #5b5b5b;
+    border-radius: 5px ;
+
 }
+
 
 #linkCV:hover {
     color: var(--secondary-shadow);
@@ -520,6 +532,10 @@ svg{
     .hero img {
         width: 15rem;
         height: 15rem;
+    }
+
+    #linkCV{
+        width: 100%;
     }
 
     .habilidades{
