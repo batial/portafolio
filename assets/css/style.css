@@ -9,7 +9,7 @@
     --primary-shadow: #fffbdc ;
     --primary-color: #ffbb8b;
     --secondary-shadow: #fffffe;
-    --secondary-color: #add9ff;
+    --secondary-color: #c9c9c9;
 
     --font-family: roboto, monospace , Arial;
     --bold-font: 700;
@@ -490,7 +490,7 @@ svg{
         margin-left: 0%;
     }
     .tarjeta:hover{
-        background-color: var(--primary-color);
+        background-color: var(--secondary-shadow);
     }
     .tarjeta:hover ~ .tarjeta{
         z-index: 1;
