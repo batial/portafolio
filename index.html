@@ -1,56 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sebastián Debesa | Desarrollador Front-end</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!--  Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
     <header>
-        <!-- Barra de Navegación -->
-        <nav>
-            <h1>Sebastián Debesa</h1>
-            <ul class="navegacion">
-              <li><a href="#sobremi" class="nav-link">Acerca de Mí</a></li>
-              <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
-              <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-              <li><a href="#contacto" class="nav-link">Contacto</a></li>
-              <li>
-                <a href="https://www.linkedin.com/in/sebastiandebesa/" target="_blank" class="nav-link"><i class="bi bi-linkedin"></i></a>
-              </li>
-              <li>
-                <a href="https://github.com/batial" target="_blank" class="nav-link"><i class="bi bi-github"></i></a>
-              </li>
-            </ul>
-            <button class="menu-hamburguesa" id="menu-hamburguesa">
-              <ion-icon class="barras" name="menu-outline"></ion-icon>
-            </button>
+      <!-- Barra de Navegación -->
+      <nav>
+        <h1>Sebastián Debesa</h1>
+        <ul class="navegacion">
+          <li><a href="#sobremi" class="nav-link">Acerca de Mí</a></li>
+          <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/sebastiandebesa/"
+              target="_blank"
+              class="nav-link"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://github.com/batial" target="_blank" class="nav-link"
+              ><i class="bi bi-github"></i
+            ></a>
+          </li>
+        </ul>
+        <button class="menu-hamburguesa" id="menu-hamburguesa">
+          <ion-icon class="barras" name="menu-outline"></ion-icon>
+        </button>
       </nav>
     </header>
     <main>
       <!--------- Sección Hero  ------------->
       <section class="hero" id="sobremi">
-        <img src="assets/images/perfil1.jpg" alt="sebastián-debesa" loading="lazy" class="hero-img">
+        <img
+          src="assets/images/perfil1.jpg"
+          alt="sebastián-debesa"
+          loading="lazy"
+          class="hero-img"
+        />
         <div class="bio">
           <h2 class="bio-titulo">Sobre Mí</h2>
           <p class="bio-texto">
-            Soy un apasionado de la tecnología y siempre he tenido un gran interés en resolver problemas relacionados con el software. Disfruto de los desafíos que se presentan en este campo y tengo una sed constante de aprender cosas nuevas. Soy una persona responsable y determinada, dispuesta a enfrentar cualquier obstáculo que se presente. Además, valoro el trabajo en equipo y disfruto colaborar con otros para alcanzar objetivos comunes
+            Soy un apasionado de la tecnología y siempre he tenido un gran
+            interés en resolver problemas relacionados con el software. Disfruto
+            de los desafíos que se presentan en este campo y tengo una sed
+            constante de aprender cosas nuevas. Soy una persona responsable y
+            determinada, dispuesta a enfrentar cualquier obstáculo que se
+            presente. Además, valoro el trabajo en equipo y disfruto colaborar
+            con otros para alcanzar objetivos comunes
           </p>
-          <a id="linkCV" target="_blank" href="https://drive.google.com/file/d/1tCkbTZ6eVGLWKQqXBj6OB2edlGb-EZWI/view"> 
-            <p>
-            Descargar CV
-            </p> 
+          <a
+            id="linkCV"
+            target="_blank"
+            href="https://drive.google.com/file/d/1tCkbTZ6eVGLWKQqXBj6OB2edlGb-EZWI/view"
+          >
+            <p>Descargar CV</p>
           </a>
         </div>
-        
       </section>
-      <!---------- Sobre Mí ------------->
-      <section class="mas-sobre">
+      <!---------- Mas Sobre Mí ------------->
+      <!-- <section class="mas-sobre">
         <h2 id="masSobreBtn">Más sobre mí</h2>
         <div class="mas-sobre-descripcion">
           <div class="nota-sobre-mi">
@@ -69,100 +91,210 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- transición -->
-      <svg id="tran-habilidades" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#5b5b5b" fill-opacity="1" d="M0,96L40,117.3C80,139,160,181,240,202.7C320,224,400,224,480,202.7C560,181,640,139,720,128C800,117,880,139,960,170.7C1040,203,1120,245,1200,229.3C1280,213,1360,139,1400,101.3L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
+      <svg
+        id="tran-habilidades"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#5b5b5b"
+          fill-opacity="1"
+          d="M0,96L40,117.3C80,139,160,181,240,202.7C320,224,400,224,480,202.7C560,181,640,139,720,128C800,117,880,139,960,170.7C1040,203,1120,245,1200,229.3C1280,213,1360,139,1400,101.3L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
       </svg>
-      
+
       <!------------------ Sección Habilidades ---------------->
       <section id="habilidades">
-        <h2> Habilidades</h2>
+        <h2>Habilidades</h2>
         <div class="habilidades">
-          <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="tarjeta icono tarjeta-icono">
-          <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="tarjeta icono tarjeta-icono">
-          <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="tarjeta icono tarjeta-icono">
-          <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="tarjeta icono tarjeta-icono">
-          <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="tarjeta icono tarjeta-icono">
-          <img src="assets/icons/icons8-react.svg" alt="" loading="lazy" class="tarjeta icono tarjeta-icono">
+          <img
+            src="assets/icons/icons8-html-5.svg"
+            alt=""
+            loading="lazy"
+            class="tarjeta icono tarjeta-icono"
+          />
+          <img
+            src="assets/icons/icons8-css3.svg"
+            alt=""
+            loading="lazy"
+            class="tarjeta icono tarjeta-icono"
+          />
+          <img
+            src="assets/icons/icons8-javascript.svg"
+            alt=""
+            loading="lazy"
+            class="tarjeta icono tarjeta-icono"
+          />
+          <img
+            src="assets/icons/icons8-bootstrap.svg"
+            alt=""
+            loading="lazy"
+            class="tarjeta icono tarjeta-icono"
+          />
+          <img
+            src="assets/icons/icons8-git.svg"
+            alt=""
+            loading="lazy"
+            class="tarjeta icono tarjeta-icono"
+          />
+          <img
+            src="assets/icons/icons8-react.svg"
+            alt=""
+            loading="lazy"
+            class="tarjeta icono tarjeta-icono"
+          />
         </div>
       </section>
       <!-- transición -->
-      <svg id="trans-proy" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5b5b5b" fill-opacity="1" d="M0,128L40,128C80,128,160,128,240,144C320,160,400,192,480,170.7C560,149,640,75,720,74.7C800,75,880,149,960,197.3C1040,245,1120,267,1200,256C1280,245,1360,203,1400,181.3L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+      <svg
+        id="trans-proy"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#5b5b5b"
+          fill-opacity="1"
+          d="M0,128L40,128C80,128,160,128,240,144C320,160,400,192,480,170.7C560,149,640,75,720,74.7C800,75,880,149,960,197.3C1040,245,1120,267,1200,256C1280,245,1360,203,1400,181.3L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+        ></path>
+      </svg>
 
       <!---------- Sección Proyectos -------------->
       <section class="proyectos" id="proyectos">
         <h2 class="titulo-de-proyectos">Proyectos recientes:</h2>
         <div class="contenedor-de-proyectos">
-          <a href="https://batial.github.io/home.html" target="_blank">
+          <a href="https://shopi-dev.netlify.app/" target="_blank">
             <div class="tarjeta-de-proyectos">
-              <img src="assets/images/ecommerce.jpg" alt="rastreador-de-gastos" loading="lazy" class="img-ecommerce">
+              <img
+                src="assets/images/shopi.jpg"
+                alt="rastreador-de-gastos"
+                loading="lazy"
+                class="img-ecommerce"
+              />
               <div class="info-proyectos">
-                <h3 class="titulo-de-proyectos">E-commerce</h3>
+                <h3 class="titulo-de-proyectos">Ecommerce con React.js</h3>
                 <p class="detalle-de-proyectos">
-                  E-commerce realizado como proyecto final del curso de Jóvenes a Programar de manera individual.
-                  Fue desarrollado haciendo uso de las funcionalidades del DOM, APIs JSON, Bootstrap y más.
+                  En el curso de React.js y Tailwind CSS en Platzi, desarrollé
+                  un sitio web interactivo con funcionalidades de búsqueda,
+                  filtrado y detalles del producto, utilizando React.js y
+                  Tailwind CSS. Adquirí experiencia práctica y habilidades en el
+                  uso efectivo de estas tecnologías.
                 </p>
               </div>
             </div>
           </a>
           <a href="https://batial.github.io/ToDoApp/" target="_blank">
             <div class="tarjeta-de-proyectos">
-              <img src="assets/images/todoApp.jpg" alt="rastreador-de-gastos" loading="lazy" class="img-ecommerce">
+              <img
+                src="assets/images/todoApp.jpg"
+                alt="rastreador-de-gastos"
+                loading="lazy"
+                class="img-ecommerce"
+              />
               <div class="info-proyectos">
                 <h3 class="titulo-de-proyectos">To-Do App</h3>
                 <p class="detalle-de-proyectos">
-                  Formó parte de mi cursada sobre React.js en la plataforma Platzi, en donde adquirí las bases de este popular framework de javascript.
+                  Formó parte de mi cursada sobre React.js en la plataforma
+                  Platzi, en donde adquirí las bases de este popular framework
+                  de javascript.
                 </p>
               </div>
             </div>
           </a>
-          <!-- <div class="tarjeta-de-proyectos enDesarrollo">
-            <img src="assets/images/pomodoro.png" alt="rastreador-de-gastos" loading="lazy" class="img-ecommerce">
-            <div class="info-proyectos">
-              <h3 class="titulo-de-proyectos">Pomodoro Timer</h3>
-              <h4 class="titulo-de-proyectos">(Aún en desarrollo)</h4>
-              <p class="detalle-de-proyectos">
-                Página desarrollada con javascript, dedicada para estudiar con el método pomodoro.
-              </p>
+          <a href="https://batial.github.io/home.html" target="_blank">
+            <div class="tarjeta-de-proyectos">
+              <img
+                src="assets/images/ecommerce.jpg"
+                alt="rastreador-de-gastos"
+                loading="lazy"
+                class="img-ecommerce"
+              />
+              <div class="info-proyectos">
+                <h3 class="titulo-de-proyectos">E-commerce con JavaScript Vanilla</h3>
+                <p class="detalle-de-proyectos">
+                  E-commerce realizado como proyecto final del curso de Jóvenes
+                  a Programar de manera individual. Fue desarrollado haciendo
+                  uso de las funcionalidades del DOM, APIs JSON, Bootstrap y
+                  más.
+                </p>
+              </div>
             </div>
-          </div> -->
+          </a>
         </div>
       </section>
-      <svg id="trans-contact" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#fffbdc" fill-opacity="1" d="M0,160L34.3,165.3C68.6,171,137,181,206,197.3C274.3,213,343,235,411,234.7C480,235,549,213,617,170.7C685.7,128,754,64,823,53.3C891.4,43,960,85,1029,122.7C1097.1,160,1166,192,1234,186.7C1302.9,181,1371,139,1406,117.3L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path>
+      <svg
+        id="trans-contact"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+      >
+        <path
+          fill="#fffbdc"
+          fill-opacity="1"
+          d="M0,160L34.3,165.3C68.6,171,137,181,206,197.3C274.3,213,343,235,411,234.7C480,235,549,213,617,170.7C685.7,128,754,64,823,53.3C891.4,43,960,85,1029,122.7C1097.1,160,1166,192,1234,186.7C1302.9,181,1371,139,1406,117.3L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"
+        ></path>
       </svg>
 
       <!---------- Sección Contacto--------------->
       <section class="contacto" id="contacto">
-        <form action="https://formspree.io/f/xzbwnger" method="POST" class="form">
+        <form
+          action="https://formspree.io/f/xzbwnger"
+          method="POST"
+          class="form"
+        >
           <h2 class="titulo">Contactame</h2>
 
           <div class="contInput">
-            <input type="text" id="nombre" name="nombre-del-remitente" class="input" placeholder="a" required>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre-del-remitente"
+              class="input"
+              placeholder="a"
+              required
+            />
             <label for="nombre" class="label">Nombre</label>
           </div>
-    
+
           <div class="contInput">
-            <input type="email" id="email" name="email-del-remitente" class="input" placeholder="a" required>
+            <input
+              type="email"
+              id="email"
+              name="email-del-remitente"
+              class="input"
+              placeholder="a"
+              required
+            />
             <label for="email" class="label">E-Mail</label>
           </div>
 
           <div class="contInput">
-            <textarea id="mensaje" type="text" cols="60" rows="10" placeholder="Escribe tu mensaje" name="mensaje" class="input" required></textarea>
+            <textarea
+              id="mensaje"
+              type="text"
+              cols="60"
+              rows="10"
+              placeholder="Escribe tu mensaje"
+              name="mensaje"
+              class="input"
+              required
+            ></textarea>
             <label for="mensaje" class="label">Mensaje</label>
-            
           </div>
-          <input type="submit" class="submitBtn" value="Enviar">
+          <input type="submit" class="submitBtn" value="Enviar" />
         </form>
       </section>
-        <!-- Sección Footer  -->
-
-
+      <!-- Sección Footer  -->
     </main>
     <script src="assets/js/app.js"></script>
     <!-- Ion icons scripts -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
