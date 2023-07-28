@@ -9,7 +9,7 @@
     --primary-shadow: #fffbdc ;
     --primary-color: #ffbb8b;
     --secondary-shadow: #fffffe;
-    --secondary-color: #c9c9c9;
+    --secondary-color: #f2ecda;
 
     --font-family: roboto, monospace , Arial;
     --bold-font: 700;
@@ -260,10 +260,11 @@ svg{
 .proyectos {
     padding: 5rem 0;
     background-color: var(--primary-shadow);
+    color: var(--bg-color);
 }
 .proyectos h2 {
     font-size: 50px;
-    margin: 2rem 0;
+    margin: 20px 0 10px 0;
     text-align: center;
 }
 
@@ -282,7 +283,7 @@ svg{
 
 .tarjeta-de-proyectos{
     display: flex;
-    color: black;
+    color: var(--bg-color);
     height: 200px;
     justify-content: space-around;
     background-color: var(--primary-color);
@@ -291,7 +292,7 @@ svg{
     overflow: hidden;
 }
 .tarjeta-de-proyectos:hover{
-    background-color: var(--secondary-color);
+    background-color: var(--bg-color);
     color: var(--primary-shadow);
     cursor: pointer;
 }
@@ -327,7 +328,7 @@ svg{
 
 .form {
     width: 60%;
-    padding: 20px 40px;
+    padding: 20px 40px 40px 40px;
 }
 
 .titulo {
@@ -471,10 +472,6 @@ svg{
         width: 20.5rem;
     }
 
-    /* ----- mas info---- */
-    .mas-sobre-descripcion {
-        grid-template-columns: 1fr;
-    }
 
     /* ------habilidades--------  */
     .habilidades{
