@@ -53,6 +53,12 @@ html, body {
     overflow-x: hidden !important;
 }
 
+section, svg {
+  margin: 0;
+  padding: 0;
+  display: block; /* Evita espacios por comportamiento inline del SVG */
+}
+
 /* -----------nav ------------ */
 nav {
     position: fixed;
@@ -191,65 +197,54 @@ nav ul li {
     transition-duration: 0.5s;
 }
 
-/* ---------habilidades----------- */
-
-svg{
-    margin-bottom: -5px;
-}
-
-#habilidades{
-    background-color: var(--bg-color);
-    color: var(--secondary-color);
-}
-
-.habilidades {
-    display: flex;
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-    padding: 0 8rem 8rem 8rem;
-    gap: 10px;
-}
-.tarjeta {
-    transition: 300ms ease-in-out;
-}
-.tarjeta + .tarjeta {
-    margin-left: -10%;
-}
-.tarjeta:hover{
-    transform: rotate(-4deg);
-}
-.tarjeta:hover ~ .tarjeta{
-    z-index: 1;
-    translate: 60px;
+#habilidades {
+  background-color: var(--bg-color);
+  color: var(--secondary-color);
+  padding: 5rem 0;
 }
 
 #habilidades h2 {
-    font-size: 50px;
-    padding: 5rem 0 2rem 0 ;
-    text-align: center;
-    padding-top: 100px;
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
-.contenedor-habilidades{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
+.contenedor-habilidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+  padding: 0 4rem;
+}
+
+.categoria {
+  text-align: center;
+}
+
+.grupo-iconos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 .icono {
-    width: 11.875rem;
-    height: 11.25rem;
-    justify-content: end;
+  width: 11.875rem;
+  height: 11.25rem;
 }
 
 .tarjeta-icono {
-    background-color: var(--secondary-color);
-    border-radius: 75%;
-    border: 10px solid var(--secondary-shadow);
-    padding: 20px;
-    margin: 10px;
+  background-color: var(--secondary-color);
+  border-radius: 75%;
+  border: 10px solid var(--secondary-shadow);
+  padding: 20px;
+  transition: 300ms ease-in-out;
 }
+
+.tarjeta:hover {
+  transform: rotate(-4deg);
+}
+
 
 
 /* ----------Proyectos ------------ */
@@ -473,42 +468,13 @@ svg{
     }
 
 
-    /* ------habilidades--------  */
-    .habilidades{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 5rem;
-    }
-
-    .tarjeta {
-        transition: 0.5s;
-    }
-    .tarjeta + .tarjeta {
-        margin-left: 0%;
-    }
-    .tarjeta:hover{
-        background-color: var(--secondary-shadow);
-    }
-    .tarjeta:hover ~ .tarjeta{
-        z-index: 1;
-        translate: 0px;
-    }
-
-    .icono {
-        width: 10rem;
-        height: 10rem;
-        justify-content: center;
-    }
     
-    .tarjeta-icono {
-        background-color: var(--secondary-color);
-        border-radius: 75%;
-        border: 10px solid var(--secondary-shadow);
-        padding: 15px;
-        margin: 10px;
-    }
 
     /* ----------proyectos---------- */
+    .detalle-de-proyectos {
+        display: none;
+    }
+
     .contenedor-de-proyectos{
         grid-template-columns: 1fr;
     }
